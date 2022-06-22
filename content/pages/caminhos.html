@@ -1,0 +1,21 @@
+<section class="leftbar">
+    <?php if($role==2){ ?>
+        <a href="/admin/"><button class="admin"></button></a>
+        <hr>
+    <?php } ?>
+    <a href="/"><button class="feed"></button></a>
+    <a href="/perfil/<?php echo $id; ?>"><button class="perfil"></button></a>
+    <a href="/amigos/"><button class="amigos" id="amigos"></button></a>
+    <hr>
+    <a href="/anuncios/"><button class="anuncios"></button></a>
+    <a href="/eventos/"><button class="eventos"></button></a>
+    <hr>
+    <a href="/config/"><button class="configuracoes"></button></a>
+    <a href="/content/code/sair.php?d=1"><button class="sair"></button></a>
+</section>
+<style>
+    hr{
+        margin-top:3px;
+        border:1px solid gray
+    }
+</style>
